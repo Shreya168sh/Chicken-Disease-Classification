@@ -5,26 +5,26 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-
-project_name = "ChickenDiseaseClassification"
+project_name = "Chicken-Disease-Classification"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
-    f"src/__init__.py",
-    f"src/components/__init__.py",
-    f"src/utils/__init__.py",
-    f"src/config/__init__.py",
-    f"src/config/configuration.py",
-    f"src/pipeline/configuration.py",
-    f"src/entity/__init__.py",
-    f"src/constant/__init__.py",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
+    f"src/{project_name}/pipeline/configuration.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/constant/__init__.py",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "Dockerfile"
+    "Dockerfile",
+    "templates/index.html"
 ]
 
 for filepath in list_of_files:
