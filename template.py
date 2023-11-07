@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "Chicken-Disease-Classification"
+project_name = "ChickenDiseaseClassifier"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -24,7 +24,8 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "Dockerfile",
-    "templates/index.html"
+    "templates/index.html",
+    "main.py"
 ]
 
 for filepath in list_of_files:
