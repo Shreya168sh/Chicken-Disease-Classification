@@ -1,4 +1,19 @@
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+
+# Pyre type chacker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# cython debug symbols
+cython_debug/
+
 venv
-artifacts/data_ingestion/Chicken-fecal-images
+artifacts/*
+logs/*
 __pycache__
-logs
