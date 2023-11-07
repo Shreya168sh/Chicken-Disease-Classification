@@ -3,6 +3,9 @@ from src.ChickenDiseaseClassifier.components.data_ingestion import DataIngestion
 from src.ChickenDiseaseClassifier import logger
 
 
+STAGE_NAME = "Data Ingestion Stage"
+
+
 class DataIngestionPipeline:
     def __init__(self):
         pass
@@ -15,12 +18,14 @@ class DataIngestionPipeline:
         data_ingestion.extract_zip_file()
 
 
-# if __name__ == "__main__":
-#     try:
-#         logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
-#         obj = DataIngestionPipeline()
-#         obj.main()
-#         logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<\n\nx==========x")
+if __name__ == "__main__":
+    try:
+        logger.info(f"*******************")
+        logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+        obj = DataIngestionPipeline()
+        obj.main()
+        logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<\n\nx==========x")
     
-#     except Exception as e:
-#         logger.exception(e)
+    except Exception as e:
+        logger.exception(e)
+        raise e
