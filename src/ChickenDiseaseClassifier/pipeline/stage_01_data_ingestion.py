@@ -1,5 +1,3 @@
-import sys
-sys.path.append("/home/shreya/work/mlproject/Chicken-Disease-Classification")
 from src.ChickenDiseaseClassifier.config.configuration import ConfigurationManager
 from src.ChickenDiseaseClassifier.components.data_ingestion import DataIngestion
 from src.ChickenDiseaseClassifier import logger
