@@ -4,6 +4,7 @@ from zipfile import ZipFile
 import tensorflow as tf
 from PIL import Image
 import time
+from pathlib import Path
 
 from src.ChickenDiseaseClassifier.entity.config_entity import TrainingConfig
 
