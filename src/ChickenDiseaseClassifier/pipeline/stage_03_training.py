@@ -1,6 +1,9 @@
+import sys
+sys.path.append("/home/shreya/work/mlproject/Chicken-Disease-Classification")
 from src.ChickenDiseaseClassifier.config.configuration import ConfigurationManager
 from src.ChickenDiseaseClassifier.components.prepare_callbacks import PrepareCallback
 from src.ChickenDiseaseClassifier.components.training import Training
+from src.ChickenDiseaseClassifier import logger
 
 
 STAGE_NAME = "Training"
@@ -21,3 +24,16 @@ class ModelTrainingPipeline:
         training.get_base_model()
         training.train_valid_generator()
         training.train(callback_list=callback_list)
+
+
+if __name__ == "__main__":
+    try:
+        logger.info(f"*******************")
+        logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+        obj = ModelTrainingPipeline()
+        obj.main()
+        logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<\n\nx==========x")
+    
+    except Exception as e:
+        logger.exception(e)
+        raise e

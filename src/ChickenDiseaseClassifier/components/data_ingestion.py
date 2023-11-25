@@ -2,6 +2,8 @@ import os
 from pathlib import Path
 import urllib.request as request
 import zipfile
+import sys
+sys.path.append("/home/shreya/work/mlproject/Chicken-Disease-Classification")
 from src.ChickenDiseaseClassifier import logger
 from src.ChickenDiseaseClassifier.utils.common import get_size
 from src.ChickenDiseaseClassifier.entity.config_entity import DataIngestionConfig
