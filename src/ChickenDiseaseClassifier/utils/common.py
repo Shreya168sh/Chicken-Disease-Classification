@@ -3,6 +3,7 @@ import yaml
 import json
 import joblib
 import base64
+import re
 from pathlib import Path
 from box.exceptions import BoxValueError
 from box import ConfigBox
@@ -127,12 +128,19 @@ def get_size(path_to_file: Path) -> str:
 
 
 def decode_image(img_string, filename):
-    img_data = base64.b64encode(img_string)
+    is_encoded = re.search("^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$", img_string)
+    if is_encoded:
+        img_data = base64.b64decode(img_string)
+    else:
+        img_data = base64.b64encode(img_string)
+    
     with open(filename, "wb") as f:
         f.write(img_data)
         f.close()
 
 
 def encode_image(img_path):
+    print(f"encoded image path: {img_path}")
     with open(img_path, "rb") as f:
         return base64.b64decode(f.read())
+
