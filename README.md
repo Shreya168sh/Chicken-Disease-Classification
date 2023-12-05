@@ -27,7 +27,7 @@ The steps followed to solve the problem are given below:
 <br>
 
 **Command to install the requirements:**<br><br>
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 <br>
 
 **Note:** Make sure you are in the working directory where the requirements file is present.
