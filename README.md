@@ -1,5 +1,4 @@
 # Chicken Disease Classification
-<br>
 
 ### **Objective**  
 To classify chicken excreta as healthy or diseased by analyzing their images.
