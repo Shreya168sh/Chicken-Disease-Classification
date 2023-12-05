@@ -1,8 +1,8 @@
 # Chicken Disease Classification
-<br><br>
+<br>
 
 **Objective:**  To classify chicken excreta as healthy or diseased by analyzing their images.
-<br><br>
+<br>
 
 **Libraries Used**
 dvc<br>
@@ -15,7 +15,7 @@ pyYAML<br>
 scipy<br>
 seaborn<br>
 tensorflow<br>
-<br><br>
+<br>
 
 **Steps**
 
@@ -24,9 +24,9 @@ The steps followed to solve the problem are given below:
 2. Base Model Preparation
 3. Callback Preparation (to periodically save the model during training) + Model Training
 4. Model Evaluation
-<br><br>
+<br>
 
-Execute the below-given command in the terminal to install the requirements:
+Execute the below-given command in the terminal to install the requirements:<br>
 `pip install -r requirements.txt`
 <br>
 
