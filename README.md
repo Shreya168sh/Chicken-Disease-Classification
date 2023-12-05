@@ -25,7 +25,7 @@ The steps followed to solve the problem are given below:
 4. Model Evaluation
 <br>
 
-**Command to install the requirements:**<br><br>
+**Command to install the requirements:**<br>
 ```python
 pip install -r requirements.txt
 ```
