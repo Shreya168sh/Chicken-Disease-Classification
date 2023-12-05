@@ -1,7 +1,8 @@
 # Chicken Disease Classification
 <br>
 
-**Objective:**  To classify chicken excreta as healthy or diseased by analyzing their images.
+### **Objective**  
+To classify chicken excreta as healthy or diseased by analyzing their images.
 <br>
 
 ### **Libraries Used**<br>
@@ -14,7 +15,6 @@
 - scipy
 - seaborn
 - tensorflow
-<br>
 
 ### **Steps**
 
