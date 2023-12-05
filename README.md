@@ -5,16 +5,15 @@
 <br>
 
 ### **Libraries Used**<br>
-dvc<br>
-ensure<br>
-flask<br>
-matplotlib<br>
-numpy<br>
-pandas<br>
-pyYAML<br>
-scipy<br>
-seaborn<br>
-tensorflow<br>
+- ensure
+- flask
+- matplotlib
+- numpy
+- pandas
+- pyYAML
+- scipy
+- seaborn
+- tensorflow
 <br>
 
 ### **Steps**
