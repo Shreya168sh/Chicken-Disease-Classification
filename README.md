@@ -17,7 +17,7 @@ seaborn<br>
 tensorflow<br>
 <br>
 
-**Steps**
+### **Steps**
 
 The steps followed to solve the problem are given below:
 1. Data Preparation
@@ -26,7 +26,7 @@ The steps followed to solve the problem are given below:
 4. Model Evaluation
 <br>
 
-Execute the below-given command in the terminal to install the requirements:<br>
+**Command to install the requirements:**<br><br>
 `pip install -r requirements.txt`
 <br>
 
